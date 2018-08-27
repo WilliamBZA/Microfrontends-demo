@@ -25,6 +25,9 @@
 
   <ItemGroup Condition="'$(TargetFrameworkIdentifier)'=='.NETFramework' OR '$(Configuration)' != 'RuntimeStore' ">
     <PackageReference Include="Microsoft.AspNetCore" Version="$(MicrosoftAspNetCorePackageVersion)" />
+    <PackageReference Include="System.Net.NameResolution" Version="$(MicrosoftAspNetCorePackageVersion)" />
+    <PackageReference Include="System.Net.Primitives" Version="$(MicrosoftAspNetCorePackageVersion)" />
+    <PackageReference Include="System.Threading.ThreadPool" Version="$(MicrosoftAspNetCorePackageVersion)" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="$(MicrosoftAspNetCoreAuthenticationCookiesPackageVersion)" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="$(MicrosoftAspNetCoreAuthenticationFacebookPackageVersion)" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="$(MicrosoftAspNetCoreAuthenticationGooglePackageVersion)" />
