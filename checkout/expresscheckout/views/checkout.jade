@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  h1 Express Checkout
+  p Welcome to #{title}
+
+  div
+    p Please confirm your cart and default credit card. Click OK to confirm your purchase
+
+    h3 Cart items
+
+    ul
+      li My Name is Skrillex
+      li Carried to Dust (Bonus Track Version)
+    
+    h3 Credit Card
+
+    div
+      The card that will be billed is 
+      i 5124 **** **** 2467
+
+    h3 Delivery Address
+    
+    div
+      | 14A Robyn St
+      br
+      | Olivedale
+      br
+      | Johannesburg
+      br
+      | 2188
+  
+  br
+  button(class=success) Confim purchase
