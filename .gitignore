@@ -90,3 +90,5 @@ src/scaffolding.config
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+package-lock.json
