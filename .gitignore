@@ -92,4 +92,4 @@ src/scaffolding.config
 .idea/
 *.sln.iml
 
-package-lock.json
+package-lock.jsonnode_modules/
