@@ -22,5 +22,8 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "webpack": "^4.17.1"
+  },
+  "scripts": {
+    "start": "start http-server && start node_modules\\.bin\\webpack --watch --mode development"
   }
 }
