@@ -9,23 +9,23 @@ import { Car, CarNavButton } from './car.js';
 var Index = createReactClass({
   render: function() {
     return (
-        <div class="row">
-        <div class="search-wrap">
-            <div class="container">
-                <ul class="nav nav-tabs">
-                    <li class="active"><FlightNavButton></FlightNavButton></li>
+        <div className="row">
+        <div className="search-wrap">
+            <div className="container">
+                <ul className="nav nav-tabs">
+                    <li className="active"><FlightNavButton></FlightNavButton></li>
                     <li><HotelNavButton></HotelNavButton></li>
                     <li><CarNavButton></CarNavButton></li>
                 </ul>
             </div>
-            <div class="tab-content">
-                <div id="flight" class="tab-pane fade in active">
+            <div className="tab-content">
+                <div id="flight" className="tab-pane fade in active">
                     <Flight></Flight>
                 </div>
-                <div id="hotel" class="tab-pane fade">
+                <div id="hotel" className="tab-pane fade">
                     <Hotel></Hotel>
                 </div>
-                <div id="car" class="tab-pane fade">
+                <div id="car" className="tab-pane fade">
                     <Car></Car>
                 </div>
             </div>
