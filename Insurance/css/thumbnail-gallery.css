@@ -13,3 +13,9 @@ body {
     padding-top: 56px;
   }
 }
+
+
+button {
+  background: none;
+  border:none;
+}
