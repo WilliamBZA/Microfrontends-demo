@@ -50,7 +50,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Insurance:build"
+            "browserTarget": "Insurance:build",
           },
           "configurations": {
             "production": {

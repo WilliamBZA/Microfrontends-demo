@@ -17,12 +17,12 @@
     </button>
   </div>
   <div class="col-lg-3 col-md-4 col-xs-6">
-    <button href="#" class="d-block mb-4 h-100">
+    <button href="#" class="d-block mb-4 h-100" (click)="open(householdContents)">
       <img class="img-fluid img-thumbnail" src="images/householdcontents.png" alt="">
     </button>
   </div>
   <div class="col-lg-3 col-md-4 col-xs-6">
-    <button href="#" class="d-block mb-4 h-100">
+    <button href="#" class="d-block mb-4 h-100" (click)="openAllRisk(allRiskCover)">
       <img class="img-fluid img-thumbnail" src="images/allrisk.png" alt="">
     </button>
   </div>
@@ -55,7 +55,7 @@
 
 <ng-template #carCover let-modal>
   <div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+    <h4 class="modal-title" id="modal-basic-title">Vehicle Cover</h4>
     <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
       <span aria-hidden="true">&times;</span>
     </button>
@@ -89,7 +89,7 @@
 
 <ng-template #propertyCover let-modal>
   <div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+    <h4 class="modal-title" id="modal-basic-title">Property Cover</h4>
     <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
       <span aria-hidden="true">&times;</span>
     </button>
@@ -103,6 +103,36 @@
         </div>
       </div>
     </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+  </div>
+</ng-template>
+
+<ng-template #householdContents let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Household contents</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    Household contents
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+  </div>
+</ng-template>
+
+<ng-template #allRiskCover let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">All Risk Items</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+      <parcel-component [config]="coverItems"></parcel-component>
   </div>
   <div class="modal-footer">
     <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>

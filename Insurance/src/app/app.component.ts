@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+import {ParcelComponent} from './parcel.component';
 
 @Component({
   selector: 'app-root',
@@ -12,11 +12,15 @@ export class AppComponent {
 
   coverItems = ['Car Cover', 'Property', 'Pet Cover', 'Liability'];
 
-  constructor(private modalService: NgbModal) {}
+  constructor(private modalService: NgbModal) { }
 
   open(content) {
-    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
-    }, (reason) => {
+    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {}, (reason) => {
+    });
+  }
+
+  openAllRisk(content) {
+    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {}, (reason) => {
     });
   }
 }
