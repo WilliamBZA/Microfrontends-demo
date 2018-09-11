@@ -23,4 +23,9 @@ export class AppComponent {
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {}, (reason) => {
     });
   }
+
+  openLiability(content) {
+    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {}, (reason) => {
+    });
+  }
 }

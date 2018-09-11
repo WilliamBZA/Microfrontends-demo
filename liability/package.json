@@ -1,0 +1,14 @@
+{
+  "name": "iob",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+  },
+  "dependencies": {
+  },
+  "scripts": {
+    "start": "start http-server -p 4545"
+  }
+}

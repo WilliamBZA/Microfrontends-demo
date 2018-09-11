@@ -4,8 +4,6 @@ import {mountRootParcel} from 'single-spa';
 import Vue from 'vue/dist/vue.js';
 import singleSpaVue from 'single-spa-vue';
 
-import allrisk from './allrisk.vue'
-
 @Component({
     selector: 'parcel-component',
     templateUrl: './parcel.component.html',
@@ -22,7 +20,7 @@ import allrisk from './allrisk.vue'
         const vueLifecycles = singleSpaVue({
             Vue,
             appOptions: {
-              template: '<div>some template</div>'
+              template: '<div><h1>Hello from Vue!!</h1></div>'
             }
           });
 
