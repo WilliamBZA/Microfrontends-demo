@@ -94,16 +94,6 @@ namespace MusicStore
 
 
             services.AddAuthentication()
-                .AddFacebook(options =>
-            {
-                options.AppId = "550624398330273";
-                options.AppSecret = "10e56a291d6b618da61b1e0dae3a8954";
-            })
-                .AddGoogle(options =>
-            {
-                options.ClientId = "995291875932-0rt7417v5baevqrno24kv332b7d6d30a.apps.googleusercontent.com";
-                options.ClientSecret = "J_AT57H5KH_ItmMdu0r6PfXm";
-            })
                 .AddTwitter(options =>
             {
                 options.ConsumerKey = "lDSPIu480ocnXYZ9DumGCDw37";

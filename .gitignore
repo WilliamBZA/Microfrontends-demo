@@ -63,6 +63,8 @@ bld/
 node_modules
 [Oo]bj/
 
+.vscode/
+
 # Roslyn cache directories
 *.ide/
 
