@@ -5,6 +5,7 @@ var createReactClass = require('create-react-class');
 import { Flight, FlightNavButton } from './flight.js';
 import { Hotel, HotelNavButton } from './hotel.js';
 import { Car, CarNavButton } from './car.js';
+import { Cruise, CruiseNavButton } from 'microfrontends-cruises';
 
 var Index = createReactClass({
   render: function() {
@@ -16,6 +17,7 @@ var Index = createReactClass({
                     <li className="active"><FlightNavButton></FlightNavButton></li>
                     <li><HotelNavButton></HotelNavButton></li>
                     <li><CarNavButton></CarNavButton></li>
+                    <li><CruiseNavButton></CruiseNavButton></li>
                 </ul>
             </div>
             <div className="tab-content">
@@ -27,6 +29,9 @@ var Index = createReactClass({
                 </div>
                 <div id="car" className="tab-pane fade">
                     <Car></Car>
+                </div>
+                <div id="cruises" className="tab-pane fade">
+                    <Cruise></Cruise>
                 </div>
             </div>
         </div>
