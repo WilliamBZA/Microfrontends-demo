@@ -12,14 +12,14 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.2",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "webpack": "^4.19.1",
     "webpack-cli": "^3.1.0"
   },
   "dependencies": {
     "create-react-class": "^15.6.3",
     "microfrontends-cruises": "git+https://git@github.com/WilliamBZA/microfrontends-cruises.git",
     "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "webpack": "^4.17.1"
+    "react-dom": "^16.4.2"
   },
   "scripts": {
     "start": "start http-server && start node_modules\\.bin\\webpack --watch --mode development"
