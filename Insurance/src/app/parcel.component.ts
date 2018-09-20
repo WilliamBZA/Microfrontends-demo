@@ -20,7 +20,7 @@ import singleSpaVue from 'single-spa-vue';
         const vueLifecycles = singleSpaVue({
             Vue,
             appOptions: {
-              template: '<div><h1>Hello from Vue!!</h1></div>'
+              templateUrl: './vueComponent.html'
             }
           });
 
